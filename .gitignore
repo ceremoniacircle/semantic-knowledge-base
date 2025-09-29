@@ -1,5 +1,8 @@
-# Private/Sensitive Content
-docs/
+# Private/Sensitive Content - preserve folder structure but ignore contents
+docs/*
+!docs/.gitkeep
+!docs/*/
+!docs/*/.gitkeep
 private/
 confidential/
 internal/
