@@ -1,5 +1,31 @@
-# Environment variables
+# Private/Sensitive Content
+docs/
+private/
+confidential/
+internal/
+
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.json
+credentials.json
+config.json
+.secrets
+.credentials
+
+# API Keys and Tokens
+*api*key*
+*secret*
+*token*
+*password*
+*auth*
+jwt.txt
+bearer.txt
 
 # Python
 __pycache__/
@@ -12,19 +38,52 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-project
+*.sublime-workspace
 
 # OS
 .DS_Store
 Thumbs.db
+*.tmp
+*.temp
 
 # Logs
 *.log
+logs/
+log/
 
 # Dependencies
 node_modules/
+vendor/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Cloud and deployment
+.aws/
+.gcp/
+.azure/
+terraform.tfstate*
+.terraform/
+
+# Output files
+output/
+dist/
+build/
+*.out
