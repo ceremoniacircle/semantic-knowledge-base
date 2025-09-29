@@ -1,6 +1,6 @@
-# Document Embedding CLI Tool
+# Semantic Knowledge Base - Document Embedding CLI
 
-A comprehensive Python CLI tool for processing, embedding, and managing documents in Pinecone vector databases using OpenAI's text-embedding-3-small model. This tool intelligently categorizes content across multiple file formats and organizes embeddings into semantic namespaces for efficient retrieval.
+A comprehensive Python CLI tool for the Semantic Knowledge Base project. This tool processes, embeds, and manages documents in Pinecone vector databases using OpenAI's text-embedding-3-small model, intelligently categorizing content across multiple file formats and organizing embeddings into semantic namespaces for efficient retrieval.
 
 ## 🎯 Overview
 
@@ -333,4 +333,4 @@ Processing: docs/pages/journeys-awaken.json
 
 ---
 
-*Generated with Claude Code for the Ceremonia AI document embedding system*
+*Generated with Claude Code for the Semantic Knowledge Base project*

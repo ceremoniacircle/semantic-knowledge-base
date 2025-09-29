@@ -1,6 +1,24 @@
-# 📚 Document Embedder CLI Tool
+# 🧠 Semantic Knowledge Base
 
-A powerful CLI tool to embed markdown documents using OpenAI's text-embedding-3-small and store them in Pinecone for semantic search.
+An AI-powered semantic search system for organizational knowledge using OpenAI embeddings and Pinecone vector database. Transform your documents into an intelligent, searchable knowledge base with multi-format support and advanced categorization.
+
+## ✨ Key Features
+
+- **🔍 Semantic Search**: Find information using natural language queries, not just keyword matching
+- **📁 Multi-Format Support**: Process Markdown, JSON, PowerPoint, Word, PDF, and text files
+- **🏷️ Smart Categorization**: Automatically organize content into logical namespaces (ops, legal, medical, program)
+- **🧩 Intelligent Chunking**: Token-aware text splitting with configurable overlap for optimal search results
+- **🔒 Security-First**: Comprehensive .gitignore patterns protect sensitive information
+- **⚡ Interactive CLI**: User-friendly prompts for index and namespace selection
+- **📊 Rich Metadata**: Enhanced metadata extraction tailored to each content category
+
+## 🎯 Use Cases
+
+- **Knowledge Management**: Transform organizational documents into searchable databases
+- **Customer Support**: Enable semantic search across help documentation and FAQs
+- **Research & Development**: Make research papers and technical documents instantly searchable
+- **Content Discovery**: Help teams find relevant information across large document collections
+- **Compliance & Legal**: Organize and search legal documents, policies, and procedures
 
 ## 🚀 Quick Start
 
@@ -26,8 +44,8 @@ python embed_docs_to_pinecone.py search "What day is the cold plunge?"
 
 ### Option 1: Direct Usage
 ```bash
-git clone <repository>
-cd ceremonia-ai
+git clone https://github.com/ceremoniacircle/semantic-knowledge-base.git
+cd semantic-knowledge-base
 pip install -r requirements.txt
 ```
 
@@ -254,15 +272,16 @@ Upserting 15 vectors to Pinecone index 'faq'
 
 ### File Structure
 ```
-ceremonia-ai/
+semantic-knowledge-base/
 ├── embed_docs_to_pinecone.py  # Main CLI tool
 ├── requirements.txt           # Dependencies
 ├── setup.py                  # Installation script
 ├── .env.example             # Environment template
 ├── README.md               # This file
-└── docs/                   # Documents to embed
-    └── retreats/
-        └── Awaken Staff Schedule.md
+├── scripts/                # Documentation and utilities
+└── docs/                   # Your documents (add your own content here)
+    ├── .gitkeep           # Preserves folder structure
+    └── journeys/          # Example structure for organization
 ```
 
 ## 🐛 Troubleshooting
